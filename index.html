@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&family=Skranji&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="card">
+        <img src="weather images/clear.png" style="height: 80px;" alt="">
+        <h2 style ="font-weight: 500; font-style: oblique; color: aliceblue;">Welcome to the Weather website </h2>
+        <br>
+        <div class="search">
+            <input type="text" placeholder="Enter country or city name" spellcheck="false">
+            
+            <ul id="suggestions"></ul>
+
+            <button><img src="weather images/search.png" alt="Search Icon"></button>
+        </div>
+        <div class="invalid">
+            <p>Invalid country or city name</p>
+        </div>
+        <div class="weather">
+            <img src="weather images/rain.png" class="weather-icon" alt="">
+            <h2 class="condition"></h2>
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="column">
+                    <img src="weather images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="weather images/wind.png" alt="">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
